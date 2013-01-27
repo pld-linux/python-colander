@@ -19,6 +19,9 @@ URL:		http://docs.pylonsproject.org/projects/colander/
 BuildRequires:	python-distribute
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
+%if %{with tests}
+BuildRequires:	python-translationstring
+%endif
 Requires:	python-modules
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
