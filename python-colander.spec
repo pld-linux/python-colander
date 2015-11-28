@@ -5,7 +5,7 @@
 %bcond_without	tests	# do not perform "make test"
 
 %define		subver	a1
-%define		rel		1
+%define		rel		2
 %define 	module	colander
 Summary:	A simple schema-based serialization and deserialization library
 Name:		python-%{module}
